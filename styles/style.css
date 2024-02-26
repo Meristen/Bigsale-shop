@@ -1,0 +1,201 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Стиль скрытия блока */
+.display-none {
+  display: none !important;
+}
+
+/* Стили навбара */
+nav {
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo img {
+  width: 80px;
+  height: 50px;
+}
+.logo h1 {
+  margin: 0;
+  font-size: 25px;
+  font-weight: 800;
+  color: #202124;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f8f9fa;
+  color: #3c4043;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.btn:hover {
+  background-color: #e0e0e0;
+}
+.icon {
+  font-size: 24px;
+  margin-right: 8px;
+}
+/* Стили модалок регистрации, входа, добавления, изменения*/
+.modal-reg,
+.modal-log,
+.modal-add,
+.modal-edit {
+  position: fixed;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #ece5e5;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.prodList {
+  width: 300px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f9f3f3;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+.prodList:hover {
+  transform: scale(1.1);
+}
+
+.modal-reg h3,
+.modal-log h3,
+.modal-add h3,
+.modal-edit h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.modal-reg form,
+.modal-log form,
+.modal-add form,
+.modal-edit form {
+  display: flex;
+  flex-direction: column;
+}
+.modal-reg input,
+.modal-log input,
+.modal-add input,
+.modal-edit input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.modal-reg button,
+.modal-log button,
+.modal-add button,
+.modal-edit button {
+  padding: 5px 16px;
+  margin-top: 10px;
+  background-color: #b7b8b9;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.modal-reg button:hover,
+.modal-log button:hover,
+.modal-add button:hover,
+.modal-edit button:hover {
+  background-color: #6f7174;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#modal-reg-p,
+#modal-log-p,
+#modal-add-p,
+#modal-edit-p {
+  text-align: center;
+  color: rgb(224, 158, 15);
+  font-size: 13px;
+}
+h5 {
+  color: #6f7174;
+}
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 10px;
+}
+.deleteBtn {
+  padding: 5px;
+  background-color: #e54180;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.deleteBtn:hover {
+  background-color: #b43364;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.editBtn {
+  padding: 5px;
+  background-color: #91f370;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.editBtn:hover {
+  background-color: #60a24a;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+#discription {
+  display: none;
+}
+.disc {
+  position: fixed;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #ece5e5;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.price {
+  color: #516161;
+  letter-spacing: 1px;
+
+  font-size: 20px;
+  font-weight: 600;
+}
